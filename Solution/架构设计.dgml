@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Domain" Bounds="87.1183333333334,225.72,289.763333333333,140.48" Group="Expanded" />
+    <Node Id="HeBianGu.Domain.WCF.DataManager" Bounds="107.118333333333,265.72,236,25.24" Label="HeBianGu.Domain.WCF.DataManager" />
+    <Node Id="HeBianGu.Domain.WCF.ServiceManager" Bounds="107.118333333333,320.96,249.763333333333,25.24" />
+    <Node Id="HeBianGu.GeneralLayer.WCF.WebService" Bounds="104.68,396.2,254.64,25.24" />
+    <Node Id="HeBianGu.Module.WCF.SqliteDBDemoModule" Bounds="89.4733333333334,491.44,285.053333333333,25.24" Label="HeBianGu.Module.WCF.SqliteDBDemoModule" />
+    <Node Id="HeBianGu.WCF.HostApp.Console" Bounds="106.321666666667,95.2399999999998,209.376666666667,25.24" Label="HeBianGu.WCF.HostApp.Console" />
+    <Node Id="HeBianGu.WCF.HostApp.WindowService" Bounds="106.321666666667,150.48,251.356666666667,25.24" Label="HeBianGu.WCF.HostApp.WindowService" />
+    <Node Id="Host" Bounds="86.3216666666667,55.2399999999998,291.356666666667,140.48" Group="Expanded" />
+    <Node Id="ServiceModule" Bounds="69.4733333333334,451.44,325.053333333333,85.24" Group="Expanded" />
+    <Node Id="宿主" Category="Comment" Bounds="207,0,50,25.24" />
+    <Node Id="服务模块" Category="Comment" Bounds="-58.7218539316357,478.361791044776,68,25.24" UseManualLocation="True" />
+    <Node Id="领域层" Category="Comment" Bounds="-63.2302686567164,281.177194029851,56,25.24" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="Domain" Target="HeBianGu.Domain.WCF.DataManager" Category="Contains" />
+    <Link Source="Domain" Target="HeBianGu.Domain.WCF.ServiceManager" Category="Contains" />
+    <Link Source="Domain" Target="HeBianGu.GeneralLayer.WCF.WebService" Bounds="232,366.200012207031,0,21" />
+    <Link Source="HeBianGu.GeneralLayer.WCF.WebService" Target="ServiceModule" Bounds="232,421.440002441406,0,21" />
+    <Link Source="Host" Target="Domain" Bounds="-43.3100596031523,-188.805737163566,19.5161640721256,29.443536785184" />
+    <Link Source="Host" Target="HeBianGu.Domain.WCF.DataManager" Bounds="139.769570615337,140.4796326468,2.74660311534058,61.0094564787863" />
+    <Link Source="Host" Target="HeBianGu.WCF.HostApp.Console" Category="Contains" />
+    <Link Source="Host" Target="HeBianGu.WCF.HostApp.WindowService" Category="Contains" />
+    <Link Source="ServiceModule" Target="HeBianGu.Module.WCF.SqliteDBDemoModule" Category="Contains" />
+    <Link Source="宿主" Target="Host" Bounds="232,25.2399997711182,0,21.0000019073486" />
+    <Link Source="服务模块" Target="ServiceModule" Bounds="9.27814606836426,491.389466133105,51.1958341635548,0.613860771020995" />
+    <Link Source="领域层" Target="Domain" Bounds="-7.23025512695312,294.023797311814,85.3488832148983,0.690768552776319" />
+  </Links>
+  <Categories>
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+    <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>
