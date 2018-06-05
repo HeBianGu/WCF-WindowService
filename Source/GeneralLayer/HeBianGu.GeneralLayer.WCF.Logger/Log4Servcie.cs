@@ -110,7 +110,9 @@ namespace HeBianGu.GeneralLayer.WCF.Logger
 
             foreach (var item in message)
             {
-                Logger.Info(message);
+                Logger.Info(item);
+
+                Console.WriteLine(item);
             }
         }
 
@@ -121,7 +123,9 @@ namespace HeBianGu.GeneralLayer.WCF.Logger
 
             foreach (var item in ex)
             {
-                Logger.Error(ex);
+                Logger.Error(item);
+
+                Console.WriteLine(item);
             }
         }
 

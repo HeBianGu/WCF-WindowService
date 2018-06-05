@@ -21,6 +21,14 @@ namespace HeBianGu.GeneralLayer.WCF.WebService
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         // TODO: 在此添加您的服务操作
+
+        [OperationContract]
+        [WebInvoke(Method = "POST", UriTemplate = "GetAllMeasureData", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare)]
+        string GetAllMeasureData();
+
+        [OperationContract]
+        [WebGet(UriTemplate = "Hello", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        string Hello();
     }
 
 

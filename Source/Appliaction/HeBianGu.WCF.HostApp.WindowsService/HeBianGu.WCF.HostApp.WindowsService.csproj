@@ -70,6 +70,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\DomainLayer\HeBianGu.Domain.WCF.DataManager\HeBianGu.Domain.WCF.DataManager.csproj">
+      <Project>{91F36652-5388-4B40-A644-6667008B9F66}</Project>
+      <Name>HeBianGu.Domain.WCF.DataManager</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\DomainLayer\HeBianGu.Domian.WCF.ServiceManager\HeBianGu.Domian.WCF.ServiceManager.csproj">
       <Project>{FDA189CA-3ACA-4473-B06A-41BF8AC50E48}</Project>
       <Name>HeBianGu.Domian.WCF.ServiceManager</Name>

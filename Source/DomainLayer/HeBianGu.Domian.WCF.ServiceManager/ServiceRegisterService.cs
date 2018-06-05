@@ -56,7 +56,7 @@ namespace HeBianGu.Domian.WCF.ServiceManager
         {
             try
             {
-                Uri uri = new Uri("http://LocalHost:54804/");
+                Uri uri = new Uri("http://LocalHost:22999/");
 
                 ServiceHost host = new ServiceHost(typeof(HeBianGu.GeneralLayer.WCF.WebService.Service1), uri);
 

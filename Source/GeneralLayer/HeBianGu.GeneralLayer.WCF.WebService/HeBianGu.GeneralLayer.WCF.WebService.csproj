@@ -81,6 +81,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DomainLayer\HeBianGu.Domain.WCF.DataManager\HeBianGu.Domain.WCF.DataManager.csproj">
+      <Project>{91f36652-5388-4b40-a644-6667008b9f66}</Project>
+      <Name>HeBianGu.Domain.WCF.DataManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HeBianGu.GeneralLayer.WCF.Logger\HeBianGu.GeneralLayer.WCF.Logger.csproj">
+      <Project>{59e19092-6064-4315-ac4c-1ee4a54dc732}</Project>
+      <Name>HeBianGu.GeneralLayer.WCF.Logger</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

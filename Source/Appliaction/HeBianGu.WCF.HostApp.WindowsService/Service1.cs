@@ -1,4 +1,5 @@
-﻿using HeBianGu.Domian.WCF.ServiceManager;
+﻿using HeBianGu.Domain.WCF.DataManager;
+using HeBianGu.Domian.WCF.ServiceManager;
 using HeBianGu.GeneralLayer.WCF.Logger;
 using System;
 using System.Collections.Generic;
@@ -37,6 +38,18 @@ namespace HeBianGu.WCF.HostApp.WindowsService
 
         protected override void OnStart(string[] args)
         {
+            //try
+            //{
+            //    var str = DataService.Instance.GetAll();
+
+            //    Log4Servcie.Instance.Info(str);
+            //}
+            //catch(Exception ex)
+            //{
+            //    Log4Servcie.Instance.Error(ex);
+            //}
+
+
             ServiceRegisterService.Instance.RegisterCodeDemo();
 
         }

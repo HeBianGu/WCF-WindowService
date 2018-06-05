@@ -1,6 +1,9 @@
-﻿using System;
+﻿using HeBianGu.Domain.WCF.DataManager;
+using HeBianGu.GeneralLayer.WCF.Logger;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
@@ -14,6 +17,8 @@ namespace HeBianGu.GeneralLayer.WCF.WebService
     {
         public string GetData(string value)
         {
+            Log4Servcie.Instance.Info(string.Format("You entered: {0}", value));
+
             return string.Format("You entered: {0}", value);
         }
 
@@ -29,5 +34,37 @@ namespace HeBianGu.GeneralLayer.WCF.WebService
             }
             return composite;
         }
+
+        public string GetAllMeasureData()
+        {
+            Log4Servcie.Instance.Info(string.Format(MethodInfo.GetCurrentMethod().Name));
+
+            try
+            {
+                
+                string result = DataService.Instance.GetAll().ToString();
+                return result;
+            }
+            catch(Exception ex)
+            {
+                Log4Servcie.Instance.Error(ex);
+                Log4Servcie.Instance.Error(ex.InnerException);
+                return ex.InnerException.ToString();
+            }
+           
+
+          
+        }
+
+
+        public string Hello()
+        {
+            Log4Servcie.Instance.Info(string.Format(MethodInfo.GetCurrentMethod().Name));
+
+            string result = DataService.Instance.GetAll().ToString();
+
+            return result;
+        }
+
     }
 }
