@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Application", "1.Application", "{7EAD1AA0-33C6-4FBC-A6B0-A91DEAB95CC4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{7EAD1AA0-33C6-4FBC-A6B0-A91DEAB95CC4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.BaseLayer", "2.BaseLayer", "{120D6AAF-36A4-43B7-AC87-0AAAB06381D4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - BaseLayer", "6 - BaseLayer", "{120D6AAF-36A4-43B7-AC87-0AAAB06381D4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.GeneralLayer", "3.GeneralLayer", "{7933934A-89F0-4741-B8DA-874138ACB457}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - GeneralLayer", "5 - GeneralLayer", "{7933934A-89F0-4741-B8DA-874138ACB457}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.DoMain", "5.DoMain", "{34883D35-8700-47B7-9627-1167662AAF1F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - DoMain", "3 - DoMain", "{34883D35-8700-47B7-9627-1167662AAF1F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Module", "4.Module", "{C078799E-7E36-4D82-BA24-03647D8335EC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Module", "4 - Module", "{C078799E-7E36-4D82-BA24-03647D8335EC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.WCF.HostApp.WindowsService", "..\Source\Appliaction\HeBianGu.WCF.HostApp.WindowsService\HeBianGu.WCF.HostApp.WindowsService.csproj", "{C008D3EE-D7FC-47C3-B0B9-1F53E632E7E5}"
 EndProject
@@ -21,9 +21,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Domain.WCF.DataMan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Module.WCF.SqliteDBDemoModule", "..\Source\Modules\HeBianGu.Module.WCF.SqliteDBDemoModule\HeBianGu.Module.WCF.SqliteDBDemoModule.csproj", "{FC8169EE-402C-4717-8B11-9533F0BA97D9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.UnitTester", "6.UnitTester", "{AA671083-3E22-431F-9534-6DB8366FDD2E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7 - UnitTester", "7 - UnitTester", "{AA671083-3E22-431F-9534-6DB8366FDD2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "..\Source\UnitTester\UnitTestProject\UnitTestProject.csproj", "{20101D6B-688A-4837-BF08-9DC0CE97D588}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Test.WCF.UnitTestApp", "..\Source\UnitTester\UnitTestProject\HeBianGu.Test.WCF.UnitTestApp.csproj", "{20101D6B-688A-4837-BF08-9DC0CE97D588}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.WCF.HostApp.Console", "..\Source\Appliaction\HeBianGu.WCF.HostApp.Console\HeBianGu.WCF.HostApp.Console.csproj", "{C369A21D-49C1-453F-8EB5-B5EF77DF8E08}"
 EndProject
@@ -38,13 +38,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.ReadMe", "0.ReadMe", "{39
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.BaseLayer.WCF.Model", "..\Source\BaseLayer\HeBianGu.BaseLayer.WCF.Model\HeBianGu.BaseLayer.WCF.Model.csproj", "{474E2893-720C-4543-AE2E-E2F8E43E3711}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.Service", "6.Service", "{F0459558-E0A8-4E6C-B4AE-6C2E9C4ACB9E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Service", "2 - Service", "{F0459558-E0A8-4E6C-B4AE-6C2E9C4ACB9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.WCF.Test.LocalConsoleApp", "..\Source\Appliaction\HeBianGu.WCF.Test.LocalConsoleApp\HeBianGu.WCF.Test.LocalConsoleApp.csproj", "{D979D716-EB6F-4FAB-8DCA-C1246AC8C7EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Test.WCF.DBConsoleApp", "..\Source\Appliaction\HeBianGu.WCF.Test.LocalConsoleApp\HeBianGu.Test.WCF.DBConsoleApp.csproj", "{D979D716-EB6F-4FAB-8DCA-C1246AC8C7EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.BaseLayer.WCF.Tool", "..\Source\BaseLayer\HeBianGu.BaseLayer.WCF.Tool\HeBianGu.BaseLayer.WCF.Tool.csproj", "{D1609338-4B2E-4C51-8DA6-40EB51D60380}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.ConsoleApp", "..\Source\UnitTester\Test.ConsoleApp\Test.ConsoleApp.csproj", "{A28F39C8-097F-48CF-85E6-C49A1F931E8A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Test.WCF.ConsoleApp", "..\Source\UnitTester\Test.ConsoleApp\HeBianGu.Test.WCF.ConsoleApp.csproj", "{A28F39C8-097F-48CF-85E6-C49A1F931E8A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Service.WCF.WebService", "..\Source\Service\HeBianGu.Service.WCF.WebService\HeBianGu.Service.WCF.WebService.csproj", "{55D3BA33-F5B3-4E47-9861-A702B3E72717}"
 EndProject
@@ -120,7 +120,7 @@ Global
 		{59E19092-6064-4315-AC4C-1EE4A54DC732} = {7933934A-89F0-4741-B8DA-874138ACB457}
 		{FDA189CA-3ACA-4473-B06A-41BF8AC50E48} = {34883D35-8700-47B7-9627-1167662AAF1F}
 		{474E2893-720C-4543-AE2E-E2F8E43E3711} = {120D6AAF-36A4-43B7-AC87-0AAAB06381D4}
-		{D979D716-EB6F-4FAB-8DCA-C1246AC8C7EE} = {7EAD1AA0-33C6-4FBC-A6B0-A91DEAB95CC4}
+		{D979D716-EB6F-4FAB-8DCA-C1246AC8C7EE} = {AA671083-3E22-431F-9534-6DB8366FDD2E}
 		{D1609338-4B2E-4C51-8DA6-40EB51D60380} = {120D6AAF-36A4-43B7-AC87-0AAAB06381D4}
 		{A28F39C8-097F-48CF-85E6-C49A1F931E8A} = {AA671083-3E22-431F-9534-6DB8366FDD2E}
 		{55D3BA33-F5B3-4E47-9861-A702B3E72717} = {F0459558-E0A8-4E6C-B4AE-6C2E9C4ACB9E}
