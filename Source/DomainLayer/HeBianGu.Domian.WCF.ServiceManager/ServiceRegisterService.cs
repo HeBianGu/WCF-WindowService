@@ -1,5 +1,5 @@
 ﻿using HeBianGu.GeneralLayer.WCF.Logger;
-using HeBianGu.GeneralLayer.WCF.WebService;
+using HeBianGu.Service.WCF.WebService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -58,7 +58,7 @@ namespace HeBianGu.Domian.WCF.ServiceManager
             {
                 Uri uri = new Uri("http://LocalHost:22999/");
 
-                ServiceHost host = new ServiceHost(typeof(HeBianGu.GeneralLayer.WCF.WebService.Service1), uri);
+                ServiceHost host = new ServiceHost(typeof(Service1), uri);
 
                 // 要点一：定义元数据发布方式，此处  通过在服务所在的URL后加“?wsdl”的方式公布WSDL，可直接通过HTTP访问得到。
                 System.ServiceModel.Description.ServiceMetadataBehavior behavior = new System.ServiceModel.Description.ServiceMetadataBehavior();
@@ -67,7 +67,7 @@ namespace HeBianGu.Domian.WCF.ServiceManager
                 host.Description.Behaviors.Add(behavior);
 
                 // 要点二：WebHttpBinding
-                ServiceEndpoint endpoint = host.AddServiceEndpoint(typeof(HeBianGu.GeneralLayer.WCF.WebService.IService1), new WebHttpBinding(), string.Empty);
+                ServiceEndpoint endpoint = host.AddServiceEndpoint(typeof(IService1), new WebHttpBinding(), string.Empty);
 
                 // 要点三:
                 endpoint.EndpointBehaviors.Add(new WebHttpBehavior());

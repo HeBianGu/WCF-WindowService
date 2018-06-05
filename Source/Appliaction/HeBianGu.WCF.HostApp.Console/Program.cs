@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using HeBianGu.Domian.WCF.ServiceManager;
 using System.Reflection;
 using HeBianGu.GeneralLayer.WCF.Logger;
-using HeBianGu.GeneralLayer.WCF.WebService;
 
 namespace HeBianGu.WCF.HostApp.Console
 {

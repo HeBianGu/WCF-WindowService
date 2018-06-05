@@ -1,38 +1,71 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="Domain" Bounds="87.1183333333334,225.72,289.763333333333,140.48" Group="Expanded" />
-    <Node Id="HeBianGu.Domain.WCF.DataManager" Bounds="107.118333333333,265.72,236,25.24" Label="HeBianGu.Domain.WCF.DataManager" />
-    <Node Id="HeBianGu.Domain.WCF.ServiceManager" Bounds="107.118333333333,320.96,249.763333333333,25.24" />
-    <Node Id="HeBianGu.GeneralLayer.WCF.WebService" Bounds="104.68,396.2,254.64,25.24" />
-    <Node Id="HeBianGu.Module.WCF.SqliteDBDemoModule" Bounds="89.4733333333334,491.44,285.053333333333,25.24" Label="HeBianGu.Module.WCF.SqliteDBDemoModule" />
-    <Node Id="HeBianGu.WCF.HostApp.Console" Bounds="106.321666666667,95.2399999999998,209.376666666667,25.24" Label="HeBianGu.WCF.HostApp.Console" />
-    <Node Id="HeBianGu.WCF.HostApp.WindowService" Bounds="106.321666666667,150.48,251.356666666667,25.24" Label="HeBianGu.WCF.HostApp.WindowService" />
-    <Node Id="Host" Bounds="86.3216666666667,55.2399999999998,291.356666666667,140.48" Group="Expanded" />
-    <Node Id="ServiceModule" Bounds="69.4733333333334,451.44,325.053333333333,85.24" Group="Expanded" />
-    <Node Id="宿主" Category="Comment" Bounds="207,0,50,25.24" />
-    <Node Id="服务模块" Category="Comment" Bounds="-58.7218539316357,478.361791044776,68,25.24" UseManualLocation="True" />
-    <Node Id="领域层" Category="Comment" Bounds="-63.2302686567164,281.177194029851,56,25.24" UseManualLocation="True" />
+    <Node Id=":UnitTestProject" Category="Comment" Bounds="722.069166666667,446.68,68,25.24" Label="单元测试" />
+    <Node Id="Cleanup.bat" Category="Comment" Bounds="302.293333333334,150.48,88.77,25.24" Label="Cleanup.bat" />
+    <Node Id="HeBianGu.Domain.WCF.DataManager" Category="Category2" Bounds="404.069166666667,501.92,236,25.24" Label="HeBianGu.Domain.WCF.DataManager" />
+    <Node Id="HeBianGu.Domain.WCF.ServiceManager" Category="Category2" Bounds="456.1875,391.439999999999,249.763333333333,25.24" Label="HeBianGu.Domain.WCF.ServiceManager" />
+    <Node Id="HeBianGu.GeneralLayer.WCF.WebService" Category="Category1" Bounds="470.869166666667,446.68,220.4,25.24" Label="HeBianGu.Service.WCF.WebService" />
+    <Node Id="HeBianGu.Module.WCF.SqliteDBDemoModule" Category="Category5" Bounds="489.5425,597.16,285.053333333333,25.24" Label="HeBianGu.Module.WCF.SqliteDBDemoModule">
+      <Category Ref="Category3" />
+      <Category Ref="Category9" />
+    </Node>
+    <Node Id="HeBianGu.WCF.HostApp.Console" Bounds="20,316.2,209.376666666667,25.24" Label="HeBianGu.WCF.HostApp.Console" />
+    <Node Id="HeBianGu.WCF.HostApp.WindowService" Category="Category1" Bounds="20,150.48,251.356666666667,25.24" Label="HeBianGu.WCF.HostApp.WindowService" />
+    <Node Id="HeBianGu.WCF.Test.LocalConsoleApp" Bounds="203.175833333333,587.16,235.786666666667,25.24" />
+    <Node Id="Host" Bounds="0,55.2399999999996,516.138333333334,306.2" Group="Expanded" />
+    <Node Id="ServiceModule" Bounds="469.5425,557.16,325.053333333333,85.24" Group="Expanded" />
+    <Node Id="Setup.bat" Category="Comment" Bounds="421.218333333333,150.48,74.9200000000001,25.24" Label="Setup.bat" />
+    <Node Id="Test.ConsoleApp" Bounds="808.764166666667,501.92,116.61,25.24" />
+    <Node Id="Window服务宿主" Category="Comment" Bounds="87.8900000000002,95.2399999999996,115.576666666667,25.24" />
+    <Node Id="单元测试:UnitTestProject" Bounds="670.174166666667,501.92,107.79,25.24" Label="UnitTestProject" />
+    <Node Id="安装和卸载Window服务" Bounds="270.89,205.72,151.576666666667,25.24" Label="安装和卸载Window服务" />
+    <Node Id="宿主" Category="Comment" Bounds="233.069166666667,0,50,25.24" />
+    <Node Id="控制台宿主" Category="Comment" Bounds="84.6883333333335,260.96,80,25.24" />
+    <Node Id="本地数据库测试" Category="Comment" Bounds="269.069166666667,501.92,104,25.24" />
+    <Node Id="注册服务" Category="Comment" Bounds="547.069166666667,195.72,68,25.24" />
+    <Node Id="测试应用程序" Category="Comment" Bounds="821.069166666667,446.68,92,25.24" />
+    <Node Id="领域" Category="Comment" Bounds="390.069166666667,446.68,50,25.24" />
   </Nodes>
   <Links>
-    <Link Source="Domain" Target="HeBianGu.Domain.WCF.DataManager" Category="Contains" />
-    <Link Source="Domain" Target="HeBianGu.Domain.WCF.ServiceManager" Category="Contains" />
-    <Link Source="Domain" Target="HeBianGu.GeneralLayer.WCF.WebService" Bounds="232,366.200012207031,0,21" />
-    <Link Source="HeBianGu.GeneralLayer.WCF.WebService" Target="ServiceModule" Bounds="232,421.440002441406,0,21" />
-    <Link Source="Host" Target="Domain" Bounds="-43.3100596031523,-188.805737163566,19.5161640721256,29.443536785184" />
-    <Link Source="Host" Target="HeBianGu.Domain.WCF.DataManager" Bounds="139.769570615337,140.4796326468,2.74660311534058,61.0094564787863" />
+    <Link Source=":UnitTestProject" Target="单元测试:UnitTestProject" Bounds="735.89111328125,471.920013427734,12.867431640625,22.2123107910156" />
+    <Link Source="Cleanup.bat" Target="安装和卸载Window服务" Bounds="346.678344726563,175.720001220703,0,21" />
+    <Link Source="HeBianGu.Domain.WCF.DataManager" Target="HeBianGu.WCF.Test.LocalConsoleApp" Bounds="359.113464355469,527.159973144531,133.197143554688,56.4862060546875" />
+    <Link Source="HeBianGu.Domain.WCF.DataManager" Target="ServiceModule" Bounds="538.354919433594,527.159973144531,31.6002197265625,24.4873046875" />
+    <Link Source="HeBianGu.Domain.WCF.ServiceManager" Target="HeBianGu.GeneralLayer.WCF.WebService" Bounds="581.069152832031,416.679992675781,0,21" />
+    <Link Source="HeBianGu.GeneralLayer.WCF.WebService" Target="HeBianGu.Domain.WCF.DataManager" Bounds="542.118041992188,471.920013427734,25.4721069335938,23.8488159179688" />
+    <Link Source="HeBianGu.GeneralLayer.WCF.WebService" Target="Test.ConsoleApp" Bounds="646.408081054688,471.920013427734,153.955261230469,29.7359619140625" />
+    <Link Source="HeBianGu.GeneralLayer.WCF.WebService" Target="单元测试:UnitTestProject" Bounds="613.738586425781,471.920013427734,69.2657470703125,26.7568969726563" />
+    <Link Source="HeBianGu.WCF.HostApp.WindowService" Target="安装和卸载Window服务" Bounds="191.59831237793,175.720001220703,100.481796264648,27.614990234375" />
+    <Link Source="Host" Target="Cleanup.bat" Category="Contains" />
+    <Link Source="Host" Target="HeBianGu.Domain.WCF.ServiceManager" Bounds="510.732666015625,361.440002441406,41.8123168945313,25.3359375" />
     <Link Source="Host" Target="HeBianGu.WCF.HostApp.Console" Category="Contains" />
     <Link Source="Host" Target="HeBianGu.WCF.HostApp.WindowService" Category="Contains" />
+    <Link Source="Host" Target="Setup.bat" Category="Contains" />
+    <Link Source="Host" Target="Window服务宿主" Category="Contains" />
+    <Link Source="Host" Target="安装和卸载Window服务" Category="Contains" />
+    <Link Source="Host" Target="控制台宿主" Category="Contains" />
     <Link Source="ServiceModule" Target="HeBianGu.Module.WCF.SqliteDBDemoModule" Category="Contains" />
-    <Link Source="宿主" Target="Host" Bounds="232,25.2399997711182,0,21.0000019073486" />
-    <Link Source="服务模块" Target="ServiceModule" Bounds="9.27814606836426,491.389466133105,51.1958341635548,0.613860771020995" />
-    <Link Source="领域层" Target="Domain" Bounds="-7.23025512695312,294.023797311814,85.3488832148983,0.690768552776319" />
+    <Link Source="Setup.bat" Target="安装和卸载Window服务" Bounds="380.337219238281,175.720001220703,52.7538452148438,26.0189514160156" />
+    <Link Source="Window服务宿主" Target="HeBianGu.WCF.HostApp.WindowService" Bounds="145.678329467773,120.480003356934,0,20.9999923706055" />
+    <Link Source="宿主" Target="Host" Bounds="258.069152832031,25.2399997711182,0,21.0000019073486" />
+    <Link Source="控制台宿主" Target="HeBianGu.WCF.HostApp.Console" Bounds="124.688331604004,286.200012207031,0,21" />
+    <Link Source="本地数据库测试" Target="HeBianGu.WCF.Test.LocalConsoleApp" Bounds="321.069152832031,527.159973144531,0,51" />
+    <Link Source="注册服务" Target="HeBianGu.Domain.WCF.ServiceManager" Bounds="581.069152832031,220.960006713867,0,161.479995727539" />
+    <Link Source="测试应用程序" Target="Test.ConsoleApp" Bounds="867.069152832031,471.920013427734,0,21" />
+    <Link Source="领域" Target="HeBianGu.Domain.WCF.DataManager" Bounds="439.033782958984,471.671997070313,50.59326171875,26.119384765625" />
   </Links>
   <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Category2" Label="类别 2" Background="#FF339933" IsTag="True" />
+    <Category Id="Category3" Label="类别 3" Background="#FF3EBCED" IsTag="True" />
+    <Category Id="Category5" Label="类别 5" Background="#FF9B4F96" IsTag="True" />
+    <Category Id="Category9" Label="类别 9" Background="#FF00539C" IsTag="True" />
     <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
     <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
   </Categories>
   <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
     <Property Id="Bounds" DataType="System.Windows.Rect" />
     <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
     <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
@@ -43,17 +76,37 @@
     <Property Id="IsContainment" DataType="System.Boolean" />
     <Property Id="IsEnabled" DataType="System.Boolean" />
     <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
     <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
     <Property Id="Layout" DataType="System.String" />
     <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
     <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
     <Property Id="TargetType" DataType="System.Type" />
-    <Property Id="UseManualLocation" DataType="System.Boolean" />
     <Property Id="Value" DataType="System.String" />
     <Property Id="ValueLabel" DataType="System.String" />
     <Property Id="ZoomLevel" DataType="System.String" />
   </Properties>
   <Styles>
+    <Style TargetType="Node" GroupLabel="类别 9" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category9')" />
+      <Setter Property="Background" Value="#FF00539C" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 3" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category3')" />
+      <Setter Property="Background" Value="#FF3EBCED" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 5" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category5')" />
+      <Setter Property="Background" Value="#FF9B4F96" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 2" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
     <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
       <Condition Expression="HasCategory('Comment')" />
       <Setter Property="Background" Value="#FFFFFACD" />

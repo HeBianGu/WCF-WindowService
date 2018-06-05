@@ -6,12 +6,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{AA65A7B5-A947-4288-961E-08DE089BC520}</ProjectGuid>
+    <ProjectGuid>{55D3BA33-F5B3-4E47-9861-A702B3E72717}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HeBianGu.GeneralLayer.WCF.WebService</RootNamespace>
-    <AssemblyName>HeBianGu.GeneralLayer.WCF.WebService</AssemblyName>
+    <RootNamespace>HeBianGu.Service.WCF.WebService</RootNamespace>
+    <AssemblyName>HeBianGu.Service.WCF.WebService</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -26,7 +26,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\</OutputPath>
+    <OutputPath>..\..\..\Product\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -83,11 +83,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\DomainLayer\HeBianGu.Domain.WCF.DataManager\HeBianGu.Domain.WCF.DataManager.csproj">
-      <Project>{91f36652-5388-4b40-a644-6667008b9f66}</Project>
+      <Project>{91F36652-5388-4B40-A644-6667008B9F66}</Project>
       <Name>HeBianGu.Domain.WCF.DataManager</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HeBianGu.GeneralLayer.WCF.Logger\HeBianGu.GeneralLayer.WCF.Logger.csproj">
-      <Project>{59e19092-6064-4315-ac4c-1ee4a54dc732}</Project>
+    <ProjectReference Include="..\..\GeneralLayer\HeBianGu.GeneralLayer.WCF.Logger\HeBianGu.GeneralLayer.WCF.Logger.csproj">
+      <Project>{59E19092-6064-4315-AC4C-1EE4A54DC732}</Project>
       <Name>HeBianGu.GeneralLayer.WCF.Logger</Name>
     </ProjectReference>
   </ItemGroup>
@@ -104,9 +104,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>59357</DevelopmentServerPort>
+          <DevelopmentServerPort>58805</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:54804/</IISUrl>
+          <IISUrl>http://localhost:58805/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

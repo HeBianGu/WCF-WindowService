@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\Product\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -50,9 +50,9 @@
       <Project>{59E19092-6064-4315-AC4C-1EE4A54DC732}</Project>
       <Name>HeBianGu.GeneralLayer.WCF.Logger</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\GeneralLayer\HeBianGu.GeneralLayer.WCF.WebService\HeBianGu.GeneralLayer.WCF.WebService.csproj">
-      <Project>{AA65A7B5-A947-4288-961E-08DE089BC520}</Project>
-      <Name>HeBianGu.GeneralLayer.WCF.WebService</Name>
+    <ProjectReference Include="..\..\Service\HeBianGu.Service.WCF.WebService\HeBianGu.Service.WCF.WebService.csproj">
+      <Project>{55D3BA33-F5B3-4E47-9861-A702B3E72717}</Project>
+      <Name>HeBianGu.Service.WCF.WebService</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

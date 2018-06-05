@@ -60,9 +60,9 @@
       <Project>{59e19092-6064-4315-ac4c-1ee4a54dc732}</Project>
       <Name>HeBianGu.GeneralLayer.WCF.Logger</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\GeneralLayer\HeBianGu.GeneralLayer.WCF.WebService\HeBianGu.GeneralLayer.WCF.WebService.csproj">
-      <Project>{AA65A7B5-A947-4288-961E-08DE089BC520}</Project>
-      <Name>HeBianGu.GeneralLayer.WCF.WebService</Name>
+    <ProjectReference Include="..\..\Service\HeBianGu.Service.WCF.WebService\HeBianGu.Service.WCF.WebService.csproj">
+      <Project>{55d3ba33-f5b3-4e47-9861-a702b3e72717}</Project>
+      <Name>HeBianGu.Service.WCF.WebService</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
