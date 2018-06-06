@@ -29,6 +29,10 @@ namespace HeBianGu.Service.WCF.WebService
         [OperationContract]
         [WebGet(UriTemplate = "Hello", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         string Hello();
+
+        [OperationContract]
+        [WebGet(UriTemplate = "HelloDB", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        string HelloDB();
     }
 
 

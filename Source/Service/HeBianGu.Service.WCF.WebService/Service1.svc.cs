@@ -61,9 +61,28 @@ namespace HeBianGu.Service.WCF.WebService
         {
             Log4Servcie.Instance.Info(string.Format(MethodInfo.GetCurrentMethod().Name));
 
-            string result = DataService.Instance.GetAll().ToString();
+           
+                return "Hello:"+DateTime.Now.ToString();
+          
+           
+        }
 
-            return result;
+        public string HelloDB()
+        {
+            Log4Servcie.Instance.Info(string.Format(MethodInfo.GetCurrentMethod().Name));
+
+            try
+            {
+                string result = DataService.Instance.GetAll().ToString();
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+
+                return ex.ToString();
+            }
+
         }
 
     }

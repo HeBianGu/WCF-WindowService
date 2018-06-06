@@ -30,7 +30,7 @@ namespace HeBianGu.BaseLayer.WCF.Interface
             //_connectStr = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
             //    "HealthyCottage", "HealthyCottageDataBase.s3db");
 
-            _connectStr = Path.Combine( @"C:\Users\HealthyHut-001\Documents\HealthyCottage", "HealthyCottageDataBase.s3db");
+            _connectStr = Path.Combine(@"F:\GitHub\WCF-WindowService\Product\Dll", "HealthyCottageDataBase.s3db");
             
         }
     }
