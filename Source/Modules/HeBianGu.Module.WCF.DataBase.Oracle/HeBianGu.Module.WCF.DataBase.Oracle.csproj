@@ -4,19 +4,34 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{91F36652-5388-4B40-A644-6667008B9F66}</ProjectGuid>
+    <ProjectGuid>{9A2E168B-AF5A-44FC-AE7D-E5832C4BD299}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HeBianGu.Domain.WCF.DataManager</RootNamespace>
-    <AssemblyName>HeBianGu.Domain.WCF.DataManager</AssemblyName>
+    <RootNamespace>HeBianGu.Module.WCF.DataBase.Oracle</RootNamespace>
+    <AssemblyName>HeBianGu.Module.WCF.DataBase.Oracle</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\Product\Debug\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -30,6 +45,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Solution\packages\Oracle.ManagedDataAccess.12.2.1100\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,25 +59,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataService.cs" />
+    <Compile Include="DataBaseService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\BaseLayer\HeBianGu.BaseLayer.WCF.Model\HeBianGu.BaseLayer.WCF.Model.csproj">
       <Project>{474E2893-720C-4543-AE2E-E2F8E43E3711}</Project>
       <Name>HeBianGu.BaseLayer.WCF.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\BaseLayer\HeBianGu.BaseLayer.WCF.Tool\HeBianGu.BaseLayer.WCF.Tool.csproj">
-      <Project>{d1609338-4b2e-4c51-8da6-40eb51d60380}</Project>
-      <Name>HeBianGu.BaseLayer.WCF.Tool</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Modules\HeBianGu.Module.WCF.DataBase.Oracle\HeBianGu.Module.WCF.DataBase.Oracle.csproj">
-      <Project>{9a2e168b-af5a-44fc-ae7d-e5832c4bd299}</Project>
-      <Name>HeBianGu.Module.WCF.DataBase.Oracle</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Modules\HeBianGu.Module.WCF.SqliteDBDemoModule\HeBianGu.Module.WCF.SqliteDBDemoModule.csproj">
-      <Project>{fc8169ee-402c-4717-8b11-9533f0ba97d9}</Project>
-      <Name>HeBianGu.Module.WCF.SqliteDBDemoModule</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

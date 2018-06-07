@@ -48,6 +48,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Test.WCF.ConsoleAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Service.WCF.WebService", "..\Source\Service\HeBianGu.Service.WCF.WebService\HeBianGu.Service.WCF.WebService.csproj", "{55D3BA33-F5B3-4E47-9861-A702B3E72717}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Module.WCF.DataBase.Oracle", "..\Source\Modules\HeBianGu.Module.WCF.DataBase.Oracle\HeBianGu.Module.WCF.DataBase.Oracle.csproj", "{9A2E168B-AF5A-44FC-AE7D-E5832C4BD299}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -106,6 +108,10 @@ Global
 		{55D3BA33-F5B3-4E47-9861-A702B3E72717}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55D3BA33-F5B3-4E47-9861-A702B3E72717}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55D3BA33-F5B3-4E47-9861-A702B3E72717}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A2E168B-AF5A-44FC-AE7D-E5832C4BD299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A2E168B-AF5A-44FC-AE7D-E5832C4BD299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A2E168B-AF5A-44FC-AE7D-E5832C4BD299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A2E168B-AF5A-44FC-AE7D-E5832C4BD299}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -124,5 +130,6 @@ Global
 		{D1609338-4B2E-4C51-8DA6-40EB51D60380} = {120D6AAF-36A4-43B7-AC87-0AAAB06381D4}
 		{A28F39C8-097F-48CF-85E6-C49A1F931E8A} = {AA671083-3E22-431F-9534-6DB8366FDD2E}
 		{55D3BA33-F5B3-4E47-9861-A702B3E72717} = {F0459558-E0A8-4E6C-B4AE-6C2E9C4ACB9E}
+		{9A2E168B-AF5A-44FC-AE7D-E5832C4BD299} = {C078799E-7E36-4D82-BA24-03647D8335EC}
 	EndGlobalSection
 EndGlobal

@@ -43,6 +43,8 @@ namespace HeBianGu.Service.WCF.WebService
             {
 
                 string result = DataService.Instance.GetAll().ToString();
+
+                Log4Servcie.Instance.Info(result);
                 return result;
             }
             catch (Exception ex)

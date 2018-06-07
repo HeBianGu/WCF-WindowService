@@ -1,10 +1,10 @@
-﻿using HeBianGu.Module.WCF.SqliteDBDemoModule;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HeBianGu.BaseLayer.WCF.Tool;
+using HeBianGu.Module.WCF.DataBase.Oracle;
 
 namespace HeBianGu.Domain.WCF.DataManager
 {
