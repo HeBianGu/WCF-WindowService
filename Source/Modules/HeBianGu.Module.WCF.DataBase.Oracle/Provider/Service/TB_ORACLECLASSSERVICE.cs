@@ -4,8 +4,8 @@
  * Copyright(c) 长虹智慧健康有限公司, All Rights Reserved.
  * ========================================================================
  *    
- * 作者：[李海军]   时间：2018/6/5 14:18:37 
- * 文件名：DemoService 
+ * 作者：[李海军]   时间：2018/6/7 17:38:19 
+ * 文件名：Class1 
  * 说明：
  * 
  * 
@@ -21,21 +21,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HeBianGu.Module.WCF.SqliteDBDemoModule
+namespace HeBianGu.Module.WCF.DataBase.Oracle.Provider.Service
 {
-    class MeasureDataService
+    class TB_ORACLECLASSSERVICE
     {
-        public List<MeasureData> GetAll()
+
+        public List<TB_ORACLECLASS> GetAll()
         {
-            using (MeasureDataContext context = new MeasureDataContext())
+            using (TB_ORACLECLASSCONTEXT context = new TB_ORACLECLASSCONTEXT())
             {
-                //var c = from l in context.MeasureDatas
-                //        orderby l.Date
-                //        select l;
-
-                //if (c == null) return null;
-
-                var c = context.MeasureDatas;
+                var c = context.Collections;
 
                 if (c == null) return null;
 

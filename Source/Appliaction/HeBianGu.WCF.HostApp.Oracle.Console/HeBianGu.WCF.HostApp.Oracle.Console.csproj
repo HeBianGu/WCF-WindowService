@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{91F36652-5388-4B40-A644-6667008B9F66}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HeBianGu.Domain.WCF.DataManager</RootNamespace>
-    <AssemblyName>HeBianGu.Domain.WCF.DataManager</AssemblyName>
+    <ProjectGuid>{5DEE0B05-EA4D-4593-AAB4-AFABC85B5C9F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>HeBianGu.WCF.HostApp.Oracle.Console</RootNamespace>
+    <AssemblyName>HeBianGu.WCF.HostApp.Oracle.Console</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,21 +42,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataService.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\BaseLayer\HeBianGu.BaseLayer.WCF.Model\HeBianGu.BaseLayer.WCF.Model.csproj">
-      <Project>{474E2893-720C-4543-AE2E-E2F8E43E3711}</Project>
-      <Name>HeBianGu.BaseLayer.WCF.Model</Name>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DomainLayer\HeBianGu.Domian.WCF.ServiceManager\HeBianGu.Domian.WCF.ServiceManager.csproj">
+      <Project>{FDA189CA-3ACA-4473-B06A-41BF8AC50E48}</Project>
+      <Name>HeBianGu.Domian.WCF.ServiceManager</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\BaseLayer\HeBianGu.BaseLayer.WCF.Tool\HeBianGu.BaseLayer.WCF.Tool.csproj">
-      <Project>{d1609338-4b2e-4c51-8da6-40eb51d60380}</Project>
-      <Name>HeBianGu.BaseLayer.WCF.Tool</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Modules\HeBianGu.Module.WCF.DataBase.Oracle\HeBianGu.Module.WCF.DataBase.Oracle.csproj">
-      <Project>{9a2e168b-af5a-44fc-ae7d-e5832c4bd299}</Project>
-      <Name>HeBianGu.Module.WCF.DataBase.Oracle</Name>
+    <ProjectReference Include="..\..\GeneralLayer\HeBianGu.GeneralLayer.WCF.Logger\HeBianGu.GeneralLayer.WCF.Logger.csproj">
+      <Project>{59E19092-6064-4315-AC4C-1EE4A54DC732}</Project>
+      <Name>HeBianGu.GeneralLayer.WCF.Logger</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -15,9 +15,11 @@ namespace HeBianGu.Service.WCF.WebService
     // 注意: 为了启动 WCF 测试客户端以测试此服务，请在解决方案资源管理器中选择 Service1.svc 或 Service1.svc.cs，然后开始调试。
     public class Service1 : IService1
     {
+      
+
         public string GetData(string value)
         {
-            Log4Servcie.Instance.Info(string.Format("You entered: {0}", value));
+            WcfLogService.Instance.LogStartMethod(MethodInfo.GetCurrentMethod().Name);
 
             return string.Format("You entered: {0}", value);
         }
@@ -37,20 +39,20 @@ namespace HeBianGu.Service.WCF.WebService
 
         public string GetAllMeasureData()
         {
-            Log4Servcie.Instance.Info(string.Format(MethodInfo.GetCurrentMethod().Name));
+            WcfLogService.Instance.LogStartMethod(MethodInfo.GetCurrentMethod().Name);
 
             try
             {
-
                 string result = DataService.Instance.GetAll().ToString();
 
-                Log4Servcie.Instance.Info(result);
+                WcfLogService.Instance.LogResultMethod(result);
+
                 return result;
             }
             catch (Exception ex)
             {
-                Log4Servcie.Instance.Error(ex);
-                Log4Servcie.Instance.Error(ex.InnerException);
+                WcfLogService.Instance.LogResultMethod(ex.ToString());
+
                 return ex.InnerException.ToString();
             }
 
@@ -61,31 +63,37 @@ namespace HeBianGu.Service.WCF.WebService
 
         public string Hello()
         {
-            Log4Servcie.Instance.Info(string.Format(MethodInfo.GetCurrentMethod().Name));
+            WcfLogService.Instance.LogStartMethod(MethodInfo.GetCurrentMethod().Name);
 
-           
-                return "Hello:"+DateTime.Now.ToString();
+            string result = "Hello:" + DateTime.Now.ToString();
+
+            WcfLogService.Instance.LogResultMethod(result);
+
+            return "Hello:"+DateTime.Now.ToString();
           
            
         }
 
         public string HelloDB()
         {
-            Log4Servcie.Instance.Info(string.Format(MethodInfo.GetCurrentMethod().Name));
+            WcfLogService.Instance.LogStartMethod(MethodInfo.GetCurrentMethod().Name);
 
             try
             {
                 string result = DataService.Instance.GetAll().ToString();
 
+                WcfLogService.Instance.LogResultMethod(result);
+
                 return result;
             }
             catch (Exception ex)
             {
-
+                WcfLogService.Instance.LogResultMethod(ex.ToString());
                 return ex.ToString();
             }
 
         }
 
     }
+
 }

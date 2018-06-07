@@ -4,8 +4,8 @@
  * Copyright(c) 长虹智慧健康有限公司, All Rights Reserved.
  * ========================================================================
  *    
- * 作者：[李海军]   时间：2018/6/5 14:18:50 
- * 文件名：DemoContext 
+ * 作者：[李海军]   时间：2018/6/7 17:33:02 
+ * 文件名：Class1 
  * 说明：
  * 
  * 
@@ -22,15 +22,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HeBianGu.Module.WCF.SqliteDBDemoModule
+namespace HeBianGu.Module.WCF.DataBase.Oracle
 {
-    public class MeasureDataContext : DbContext
+    public class TB_ORACLECLASSCONTEXT : DbContext
     {
-        public DbSet<MeasureData> MeasureDatas { get; set; }
+        public DbSet<TB_ORACLECLASS> Collections { get; set; }
 
-        public MeasureDataContext() : base(DBConfiger.GetCon, true)
+        public TB_ORACLECLASSCONTEXT() : base("name=OracleDbContext")
         {
 
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.HasDefaultSchema("HEBIANGU");
         }
     }
 }

@@ -24,7 +24,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HeBianGu.Module.WCF.SqliteDBDemoModule
+namespace HeBianGu.Module.WCF.DataBase.Sqlite
 {
     /// <summary> 数据库连接配置 </summary>
     internal class DBConfiger
