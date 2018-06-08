@@ -49,7 +49,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Source\DomainLayer\HeBianGu.Domain.WCF.DataManager\HeBianGu.Domain.WCF.DataManager.csproj">
+    <ProjectReference Include="..\..\DomainLayer\HeBianGu.Domain.WCF.DataManager\HeBianGu.Domain.WCF.DataManager.csproj">
       <Project>{91F36652-5388-4B40-A644-6667008B9F66}</Project>
       <Name>HeBianGu.Domain.WCF.DataManager</Name>
     </ProjectReference>
