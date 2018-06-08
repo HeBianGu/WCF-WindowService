@@ -58,6 +58,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OracleHost", "OracleHost", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqliteHost", "SqliteHost", "{933DF722-7D72-4707-979F-1A8A4B512F04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeBianGu.Test.WCF.OracleConsoleApp", "HeBianGu.Test.WCF.OracleConsoleApp\HeBianGu.Test.WCF.OracleConsoleApp.csproj", "{AD0A2443-59B5-48BC-B5B3-08F1A3E39B81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -128,6 +130,10 @@ Global
 		{A0959628-7260-4549-AFCB-3459F6099555}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0959628-7260-4549-AFCB-3459F6099555}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0959628-7260-4549-AFCB-3459F6099555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD0A2443-59B5-48BC-B5B3-08F1A3E39B81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD0A2443-59B5-48BC-B5B3-08F1A3E39B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD0A2443-59B5-48BC-B5B3-08F1A3E39B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD0A2443-59B5-48BC-B5B3-08F1A3E39B81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -151,5 +157,6 @@ Global
 		{A0959628-7260-4549-AFCB-3459F6099555} = {C078799E-7E36-4D82-BA24-03647D8335EC}
 		{81D8BCD0-A82C-40BE-9920-3009B12249FF} = {7EAD1AA0-33C6-4FBC-A6B0-A91DEAB95CC4}
 		{933DF722-7D72-4707-979F-1A8A4B512F04} = {7EAD1AA0-33C6-4FBC-A6B0-A91DEAB95CC4}
+		{AD0A2443-59B5-48BC-B5B3-08F1A3E39B81} = {AA671083-3E22-431F-9534-6DB8366FDD2E}
 	EndGlobalSection
 EndGlobal
